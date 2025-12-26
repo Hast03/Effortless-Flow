@@ -17,7 +17,7 @@
 //
 //public class GeminiAIService {
 //    private static final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent";
-//    private static final String API_KEY = "AIzaSyChDBPfiRGxwAWneyT9cpNvIJQCVJNPi7w"; // Replace with your actual API key
+//    private static final String API_KEY = ""; // Replace with your actual API key
 //    private static final String TAG = "GeminiAIService";
 //
 //    private ExecutorService executor;
@@ -209,7 +209,7 @@
 //public class GeminiAIService {
 //
 //    // *** IMPORTANT: Replace "YOUR_ACTUAL_API_KEY_HERE" with your actual Google Cloud API Key ***
-//    private static final String API_KEY = "AIzaSyA48YyFhFv_C4sfqOMtmkPJKrWDACC3gEc"; //old key AIzaSyD8IBolYRs1RkWOEa-GKv_GEf06oguM2PI
+//    private static final String API_KEY = "YOUR_ACTUAL_API_KEY_HERE"; //
 //    // Changed to gemini-pro for more stable and structured output
 //    private static final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent";
 //    private static final String TAG = "GeminiAIService";

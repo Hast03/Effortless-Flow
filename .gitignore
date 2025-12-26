@@ -27,6 +27,9 @@
 /build/
 app/build/
 
+# Google services file
+app/google-services.json
+
 # Generated files
 # ===============
 */build/
