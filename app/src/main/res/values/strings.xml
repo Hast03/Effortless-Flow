@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Effortless Flow</string>
+    <string name="app_tagline">Your Smart Productivity Guide</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_insights">Insights</string>
+    <string name="title_settings">Settings</string>
+    <string name="no_tasks_title_msg">No tasks yet!</string>
+    <string name="no_tasks_instruction_message">Tap the + button to add your first task.</string>
+    <string name="add_task_fab_description">Add new task button</string>
+    <string name="no_tasks_icon_description">Icon indicating no tasks</string>
+    <string name="label_task_title">Task Title</string>
+    <string name="label_task_description">Description (optional)</string>
+    <string name="label_due_date">Due Date</string>
+    <string name="label_effort">Effort</string>
+    <string name="button_get_ai_suggestions">GET AI SUGGESTIONS</string>
+    <string name="ai_suggestions_title">AI Suggested Sub-tasks:</string>
+    <string name="hint_select_date">Select Date</string>
+    <string name="insights_tasks_completed_today">Tasks Completed Today</string>
+    <string name="insights_label_date_range">Date Range</string>
+    <string name="insights_label_effort">Effort</string>
+    <string name="insights_weekly_completion_trend">Weekly Completion Trend</string>
+    <string name="insights_effort_breakdown">Effort Breakdown</string>
+    <string name="insights_key_metrics">Key Metrics</string>
+    <string name="insights_overdue_tasks_label">Overdue Tasks:</string>
+    <string name="insights_total_time_logged_label">Total Time Logged:</string>
+    <string name="action_history">History</string>
+    <string name="settings_header_general">General</string>
+    <string name="settings_dark_mode_title">Dark Mode</string>
+    <string name="settings_dark_mode_description">Toggle between light and dark themes</string>
+    <string name="settings_notifications_title">Notifications</string>
+    <string name="settings_notifications_description">Manage task reminder preferences</string>
+    <string name="settings_header_account">Account</string>
+    <string name="settings_email_verification_title">Email Verification Status</string>
+    <string name="status_not_verified">Not Verified</string>
+    <string name="settings_logout">Logout</string>
+    <string name="settings_header_about_support"><![CDATA[About & Support]]></string>
+    <string name="settings_version_title">App Version</string>
+    <string name="settings_send_feedback">Send Feedback</string>
+    <string name="settings_all_rights_reserved">© 2025 Effortless Flow. All rights reserved.</string>
+
+    <string-array name="effort_levels">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
+    <!-- String array for Date Range spinner (for Java) -->
+    <string-array name="date_range_options">
+        <item>Today</item>
+        <item>This Week</item>
+        <item>This Month</item>
+        <item>Last 7 Days</item>
+        <item>Last 30 Days</item>
+        <item>All Time</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="feedback_label_subject">Subject (Optional)</string>
+    <string name="feedback_label_message">Your Message</string>
+    <string name="feedback_label_email">Your Email</string>
+    <string name="feedback_button_send">SEND FEEDBACK</string>
+    <string name="feedback_intro_message">We\'d love to hear your thoughts! Please share any feedback, bug reports, or feature requests.</string>
+    <string name="label_select_all_subtasks">Select All Generated Sub-tasks</string>
+    <string name="button_add_subtasks">Add Sub-tasks</string>
+    <string name="button_regenerate_selected">Regenerate Selected</string>
+    <string name="generating_ai_suggestions">Generating AI suggestions…</string>
+    <string name="task_options_description">More options for this task</string>
+    <string name="close_button_description">Close task details</string>
+    <string name="due_date_label">Due Date:</string>
+    <string name="effort_label">Effort:</string>
+    <string name="subtasks_label">Subtasks</string>
+    <string name="complete_task_button">Complete Task</string>
+    <string name="subtask_checkbox_description">Subtask checkbox</string>
+    <string name="subtask_completed_description">Subtask completed</string>
+    <string name="mark_as_complete_button">Mark as Complete</string>
+    <string name="insights_today_progress">Today\'s Progress</string>
+    <string name="insights_weekly_trend">This Week</string>
+    <string name="insights_completed_tasks">Completed</string>
+    <string name="insights_pending_tasks">Pending</string>
+    <string name="settings_delete_account">Delete Account</string>
+    <string name="label_subtasks">Sub-tasks</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Color (Deep Teal/Ocean Blue) -->
+    <color name="teal_primary">#00897B</color>
+    <color name="teal_primary_dark">#00574B</color> <!-- A darker shade for status bar -->
+
+    <!-- Secondary/Accent Color (Lime Green/Aqua) -->
+    <color name="aqua_accent">#00BCD4</color>
+    <color name="aqua_accent_dark">#00838F</color> <!-- A darker shade if needed -->
+
+    <!-- Backgrounds -->
+    <color name="light_gray_background">#F8F8F8</color>
+
+    <!-- Text Colors -->
+    <color name="dark_charcoal_text">#212121</color>
+    <color name="medium_gray_text">#757575</color>
+    <color name="light_gray_hint">#BDBDBD</color>
+
+    <!-- Error Color -->
+    <color name="error_red">#B00020</color>
+
+    <!-- Other Default Colors given in file-->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray_divider">#E0E0E0</color>
+    <color name="green_completed">#4CAF50</color>
+    <color name="red_alert">#B00020</color>
+    <color name="orange_medium">#FF5722</color>
+
+</resources>

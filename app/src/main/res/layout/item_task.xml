@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <CheckBox
+            android:id="@+id/task_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:buttonTint="@color/aqua_accent"
+            tools:checked="true"/>
+
+        <TextView
+            android:id="@+id/task_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_charcoal_text"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/task_options_icon"
+            app:layout_constraintStart_toEndOf="@id/task_checkBox"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Meeting with team"/>
+
+        <TextView
+            android:id="@+id/task_description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/medium_gray_text"
+            android:textSize="14sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toStartOf="@+id/task_options_icon"
+            app:layout_constraintStart_toEndOf="@id/task_checkBox"
+            app:layout_constraintTop_toBottomOf="@id/task_title_tv"
+            tools:text="Discuss project updates and assign new tasks.This is a longer description to demonstrate truncation and show subtasks count below it."/>
+
+        <TextView
+            android:id="@+id/task_subtask_summary_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/dark_charcoal_text"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/task_checkBox"
+            app:layout_constraintEnd_toStartOf="@+id/task_options_icon"
+            app:layout_constraintTop_toBottomOf="@id/task_description_tv"
+            tools:text="Subtasks: 2/5 completed" />
+
+        <TextView
+            android:id="@+id/task_due_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/medium_gray_text"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/task_checkBox"
+            app:layout_constraintTop_toBottomOf="@id/task_subtask_summary_tv"
+            tools:textColor="@color/aqua_accent"
+            tools:text="Today" />
+
+        <View
+            android:id="@+id/task_effort_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/circle_indicator"
+            app:layout_constraintBottom_toBottomOf="@+id/task_due_date_tv"
+            app:layout_constraintStart_toEndOf="@+id/task_due_date_tv"
+            app:layout_constraintTop_toTopOf="@+id/task_due_date_tv"
+            tools:backgroundTint="@color/aqua_accent"/>
+
+        <TextView
+            android:id="@+id/task_effort_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/dark_charcoal_text"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/task_effort_dot"
+            app:layout_constraintTop_toTopOf="@+id/task_effort_dot"
+            app:layout_constraintBottom_toBottomOf="@+id/task_effort_dot"
+            tools:text="Low" />
+
+        <ImageView
+            android:id="@+id/task_options_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_vert_dots"
+            app:tint="@color/medium_gray_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

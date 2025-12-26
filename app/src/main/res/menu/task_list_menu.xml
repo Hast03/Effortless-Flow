@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Search Tasks -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:iconTint="@color/white"
+        app:showAsAction="ifRoom" />
+
+    <!-- Filter by Status -->
+    <item
+        android:id="@+id/action_filter"
+        android:title="Filter">
+
+        <menu>
+            <item
+                android:id="@+id/filter_all"
+                android:title="All Tasks" />
+
+            <item
+                android:id="@+id/filter_pending"
+                android:title="Pending" />
+
+            <item
+                android:id="@+id/filter_completed"
+                android:title="Completed" />
+        </menu>
+    </item>
+
+    <!-- Sort Options -->
+    <item
+        android:id="@+id/action_sort"
+        android:title="Sort By">
+
+        <menu>
+            <item
+                android:id="@+id/sort_by_priority"
+                android:title="Priority" />
+
+            <item
+                android:id="@+id/sort_by_due_date"
+                android:title="Due Date" />
+        </menu>
+    </item>
+
+    <!-- Clear Completed -->
+    <item
+        android:id="@+id/action_clear_completed"
+        android:title="Clear Completed"
+        app:showAsAction="never" />
+
+</menu>

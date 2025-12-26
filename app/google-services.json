@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "12569191154",
+    "project_id": "effortless-flow",
+    "storage_bucket": "effortless-flow.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12569191154:android:524927aa5af372e2d2666b",
+        "android_client_info": {
+          "package_name": "com.example.effortlessflow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbRskea63SMjKW9Uk_aJhFh1scKheokXE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

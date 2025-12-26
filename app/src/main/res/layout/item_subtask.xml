@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- Checkbox or Green Check Icon -->
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp">
+
+        <CheckBox
+            android:id="@+id/subtask_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/aqua_accent"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:visibility="visible"
+            tools:checked="false"
+            android:contentDescription="@string/subtask_checkbox_description"/>
+
+        <ImageView
+            android:id="@+id/subtask_completed_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_check_circle"
+            app:tint="@color/green_completed"
+            android:visibility="gone"
+            android:contentDescription="@string/subtask_completed_description"/>
+    </FrameLayout>
+
+    <!-- Subtask Title and Description -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/subtask_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_charcoal_text"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            tools:text="Prepare presentation slides for client meeting"/>
+
+        <TextView
+            android:id="@+id/subtask_description_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/medium_gray_text"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="Ensure all data is up-to-date and visuals are engaging."
+            tools:visibility="visible"/>
+    </LinearLayout>
+
+    <!-- Mark as Complete Button (visible after checkbox check) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_mark_subtask_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/mark_as_complete_button"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:cornerRadius="4dp"
+        app:backgroundTint="@color/aqua_accent"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</LinearLayout>

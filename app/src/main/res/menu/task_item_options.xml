@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <item-->
+<!--        android:id="@+id/view_task"-->
+<!--        android:title="View Details" />-->
+
+    <item
+        android:id="@+id/edit_task"
+        android:title="Edit Task" />
+
+<!--    <item-->
+<!--        android:id="@+id/duplicate_task"-->
+<!--        android:title="Duplicate" />-->
+
+    <item
+        android:id="@+id/delete_task"
+        android:title="Delete" />
+</menu>

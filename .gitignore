@@ -1,0 +1,56 @@
+#*.iml
+#.gradle
+#/local.properties
+#/.idea/caches
+#/.idea/libraries
+#/.idea/modules.xml
+#/.idea/workspace.xml
+#/.idea/navEditor.xml
+#/.idea/assetWizardSettings.xml
+#.DS_Store
+#/build
+#/captures
+#.externalNativeBuild
+#.cxx
+#local.properties
+
+
+# IDE files and local configuration
+# ==================================
+.gradle/
+/local.properties
+.idea/
+*.iml
+
+# Build output
+# ============
+/build/
+app/build/
+
+# Generated files
+# ===============
+*/build/
+
+# Mac files (good practice to include)
+# ====================================
+.DS_Store
+
+# Test captures
+# =============
+/captures/
+
+# Keystore files (VERY IMPORTANT FOR SECURITY)
+# ============================================
+*.jks
+*.keystore
+
+# Google services file (if you use Firebase, keep this commented)
+# If you want to share your project publicly, it's safer to ignore this
+# google-services.json
+
+# Crashlytics files
+# =================
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="550dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_dialog_background">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/dialog_close_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="@color/medium_gray_text"
+            android:contentDescription="@string/close_button_description" />
+
+        <TextView
+            android:id="@+id/dialog_task_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/dark_charcoal_text"
+            android:textSize="22sp"
+            tools:text="Plan for a birthday party"/>
+
+        <ImageView
+            android:id="@+id/dialog_task_options_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="4dp"
+            app:srcCompat="@drawable/ic_vert_dots"
+            app:tint="@color/medium_gray_text"
+            android:contentDescription="@string/task_options_description"/>
+    </LinearLayout>
+
+    <!-- Separator -->
+    <View
+        android:id="@+id/header_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_divider"/>
+
+    <!-- Scrollable Content Area -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Task Description -->
+            <TextView
+                android:id="@+id/dialog_task_description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_charcoal_text"
+                android:textSize="16sp"
+                android:lineSpacingExtra="2dp"
+                tools:text="Build a comprehensive task management application with AI-powered sub-task generation capabilities"/>
+
+            <!-- Due Date & Effort Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:background="#F5F5F5"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/dialog_due_date_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/due_date_label"
+                    android:textColor="@color/medium_gray_text"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/dialog_task_due_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/aqua_accent"
+                    android:textSize="13sp"
+                    tools:text="Today, Aug 30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:text="•"
+                    android:textColor="@color/medium_gray_text"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/dialog_effort_label_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/effort_label"
+                    android:textColor="@color/medium_gray_text"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:id="@+id/dialog_task_effort_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/circle_indicator"
+                    tools:backgroundTint="@color/aqua_accent"/>
+
+                <TextView
+                    android:id="@+id/dialog_task_effort_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textColor="@color/dark_charcoal_text"
+                    android:textSize="13sp"
+                    tools:text="High" />
+            </LinearLayout>
+
+            <!-- Subtasks Section -->
+            <TextView
+                android:id="@+id/dialog_subtasks_label_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/subtasks_label"
+                android:textColor="@color/dark_charcoal_text"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <LinearLayout
+                android:id="@+id/dialog_subtasks_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/subtask_list_background"
+                android:padding="8dp">
+                <!-- Subtask items will be inflated here using item_subtask.xml -->
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Complete Task Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_complete_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/complete_task_button"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        app:cornerRadius="8dp"
+        app:backgroundTint="@color/aqua_accent_dark" />
+
+</LinearLayout>
